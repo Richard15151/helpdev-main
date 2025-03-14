@@ -62,3 +62,34 @@ footer{
     margin: 20px;
 }
 
+.pergunta form input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+.pergunta form button{
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    background-color:rgb(7, 12, 78);
+    color: white;
+}
+.pergunta h1{
+    margin-bottom: 10px;
+}
+
+.pergunta p{
+    font-size: 20px;
+}
+
+.pergunta form label{
+    font-size: 20px;
+}
+.pergunta form ::placeholder{
+    font-size: 15px;
+}
+.resultado1, .resultado2{
+    margin-bottom: 15px;
+}

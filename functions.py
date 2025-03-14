@@ -29,7 +29,9 @@ def buscar_stackoverflow(termo):
                     'link': link
                 })
             return resultados
-    return []
+    else:
+        return []
+    
 
 def buscar_reddit(termo, subreddit="learnprogramming"):
     url = f"https://www.reddit.com/r/{subreddit}/search.json?q={termo}&restrict_sr=on&sort=relevance&t=week"
@@ -48,4 +50,5 @@ def buscar_reddit(termo, subreddit="learnprogramming"):
                 'link': link
             })
         return resultados
-    return []
+    else:
+        return []

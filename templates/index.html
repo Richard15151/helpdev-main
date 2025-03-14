@@ -14,25 +14,27 @@
   </head>
   <body>
     <header>
+      <img class="gif1" src="../static/gif/helpdevbotpesquisando.gif" alt="">
       <img class="logo" src="../static/img/HELPDEV.png" alt="" />
-      <img class="gif1" src="../static/gif/helpdevbot.gif" alt="" />
+      <img class="gif1" src="../static/gif/helpdevbotpesquisando.gif" alt="" />
     </header>
     <main>
       <div class="container">
         <div class="pergunta">
           <h1>Assistente de pesquisa</h1>
           <p>
-            Digite abaixo sua dúvida e ela será consultada nas comunidades do
+            Digite abaixo um assunto de programação e ele será consultado nas comunidades do
             StackOverflow e do Reddit!
           </p>
           <form method="POST">
-            <label for="duvida">Informe sua dúvida:</label>
+            <label for="duvida">Informe o assunto:</label>
             <input
               type="text"
               name="pergunta"
               id="pergunta"
               value="{{ pergunta }}"
               required
+              placeholder="Java, python..."
             />
             <button type="submit">Buscar</button>
           </form>
@@ -44,7 +46,7 @@
               {% if resultados_stack %}
               <ul>
                 {% for resultado in resultados_stack %}
-                <li>
+                <li class="resultado1">
                   <strong>{{ resultado.titulo }}</strong><br />
                   <a href="{{ resultado.link }}" target="_blank"
                     >Ver pergunta completa na comunidade</a
@@ -61,7 +63,7 @@
               <h2>Resultados do Reddit:</h2>
               <ul>
                 {% for resultado in resultados_reddit %}
-                <li>
+                <li class="resultado2">
                   <strong>{{ resultado.titulo }}</strong><br />
                   <a href="{{ resultado.link }}" target="_blank"
                     >Ver pergunta completa no Reddit</a
