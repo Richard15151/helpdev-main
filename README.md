@@ -1,9 +1,9 @@
 
 ### Curso Técnico de Desenvolvimento de Sistemas - Senai Itapeva
 ![Imagem de capa](static/gif/helpdev.gif)
-# HEPLDEV
+# HELPDEV
 **Descrição:**
-Esta aplicação funciona como assistente de pesquisa em comunidades DEV, como o StackOverflow e learnprogramming no Reddit, o usuário deve inserir um termo ou pergunta relacionado a área de tecnologia e programação, o site entrega os primeiros 4 resultados nas duas APIs.
+Esta aplicação funciona como assistente de pesquisa em comunidades DEV, como o StackOverflow e learnprogramming no Reddit, o usuário deve inserir um termo ou pergunta relacionado a área de tecnologia e programação, o site entrega os primeiros 4 resultados das duas APIs.
 ## Índice
 * [Funcionalidades](#funcionalidades)
 * [Tecnologias](#tecnologias-utilizadas)
@@ -20,10 +20,10 @@ A principal funcionalidade é a pesquisa do termo ou pergunta inserida pelo usu�
 ![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![image](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 #### APIs:
-# Reddit:
+#### Reddit:
 https://www.reddit.com/dev/api/#GET_search
 ![gif api reddit](static/img/learningprogramming.png)
-# StackExchange:
+#### StackExchange:
 https://api.stackexchange.com/docs/search
 ![gif api stack](static/img/stack.png)
 #### DEPLOY:
