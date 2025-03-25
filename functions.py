@@ -28,6 +28,7 @@ def buscar_stackoverflow(termo):
                     'titulo': titulo_traduzido,
                     'link': link
                 })
+            print(resultados)
             return resultados
     else:
         return []
@@ -49,6 +50,7 @@ def buscar_reddit(termo, subreddit="learnprogramming"):
                 'titulo': titulo_traduzido,
                 'link': link
             })
+        print("API DO REDDIT:", resultados)
         return resultados
     else:
         return []
