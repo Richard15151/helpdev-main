@@ -35,7 +35,7 @@ def buscar_stackoverflow(termo):
 
 def buscar_reddit(termo, subreddit="learnprogramming"):
     url = f"https://www.reddit.com/r/{subreddit}/search.json?q={termo}&restrict_sr=on&sort=relevance&t=week"
-    headers = {"EVFinderBot/1.0 (https://helpdev-beryl.vercel.app/)"}
+    headers = {"User-Agent": "EVFinderBot/1.0 (https://seu-site.com)"}
     response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
